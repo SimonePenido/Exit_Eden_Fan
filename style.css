@@ -34,6 +34,14 @@ body {
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
 }
+
+.flex-title img {
+  width: 300%;
+  display: flex;
+  align-items: top;
+  justify-content: top;
+}
+
 @media screen and (max-width: 768px) {
   .flex-title {
     transform: rotate(0deg) !important;

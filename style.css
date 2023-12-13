@@ -21,13 +21,13 @@ body {
 }
 
 .flex-title {
-  color: #f1f1f13d;
+  color: #f1f1f1c5;
   position: relative;
   font-size: 3vw;
-  margin: 50%;
-  text-align: bottom;
+  margin: 43%;
+  text-align: center;
   transform: rotate(90deg);
-  top: 35%;
+  top: 15%;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -45,12 +45,12 @@ body {
   color: #f1f1f1d3;
   position: top;
   width: 45%;
-  font-size: 1vw;
-  padding: 5%;
-  top: 5%;
-  border: 1px solid #f1f1f1d3;
+  font-size: 0.9vw;
+  padding: 3%;
+  top: 15%;
+  border: 1px solid #f1f1f15e;
   border-radius: 10px;
-  line-height: 1.2;
+  line-height: 1.1;
   margin: auto;
   text-align: justify;
   transform: rotate(0deg);
@@ -63,8 +63,16 @@ body {
 @media screen and (max-width: 768px) {
   .flex-about {
     padding: 0%;
-    border: 0px solid #f1f1f1;
+    border: 0px solid #f1f1f13d;
   }
+}
+
+.flex-about img {
+  opacity: 0.6;
+}
+
+.flex-about img:hover {
+  opacity: 0.9;
 }
 
 .flex-slide {
@@ -80,6 +88,12 @@ body {
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
 }
+/**
+ * Consulta de mídia para telas com largura máxima de 768px.
+ * Aplica estilos à classe .flex-slide.
+ * Define a propriedade overflow como auto e a propriedade overflow-x como hidden.
+ */
+
 @media screen and (max-width: 768px) {
   .flex-slide {
     overflow: auto;
@@ -87,12 +101,24 @@ body {
   }
 }
 
+/**
+ * Consulta de mídia para telas com largura máxima de 768px.
+ * Modifica o tamanho da fonte dos parágrafos dentro dos elementos com a classe "flex-slide".
+ */
 @media screen and (max-width: 768px) {
   .flex-slide p {
     font-size: 2em;
   }
+  .flex-title {
+    font-size: 3em;
+  }
+  .flex-title-home img {
+    width: 150%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+  }
 }
-
 
 .flex-slide:hover {
   -webkit-flex-grow: 3;
@@ -101,7 +127,7 @@ body {
 
 .home {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/exit-eden.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(img/exit-eden.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
@@ -130,7 +156,7 @@ body {
 @media screen and (min-width: 768px) {
   .flex-title-home {
     transform: rotate(90deg);
-    top: 25%;
+    right: 1%;
     animation: aboutFlexSlide 3s 1;
     animation-delay: 0s;
   }
@@ -191,5 +217,3 @@ body {
   background-position: center;
   background-attachment: scroll;
 }
-
-
